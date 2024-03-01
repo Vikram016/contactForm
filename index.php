@@ -17,7 +17,7 @@ include 'submit.php';
 <body>
 
     <div class="container">
-        <h1> find your job </h1>
+        <h1> Find Your Job </h1>
         <div class="form-wrapper">
             <form method="post" action="" enctype="multipart/form-data" class="animate-form">
                 <h4 class="headt text-center"> Send us your application </h4>
@@ -46,25 +46,24 @@ include 'submit.php';
 
                  <div class="form-group mb-3">
                      <fieldset>
-                        <p>What is your employment status?</p>
+                        <p>what is your field of experience?</p>
                         <div class="radio">
                         <input type="radio" id="job" name="status" value="job">
-                        <label for="job">Employed</label>
+                        <label for="job">Power Generation </label>
                         </div>
                         <div class="radio"> 
                         <input type="radio" id="business" name="status" value="business">
-                        <label for="business">Business</label>
+                        <label for="business">Oil & Gas</label>
                         </div>
                         <div class="radio">
                         <input type="radio" id="student" name="status" value="student">
-                        <label for="student">Student</label>
+                        <label for="student">Substation and Transmission</label>
                     </fieldset>
                 </div>
 
                 <div class="form-group mb-3">
-                      <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" 
-                      placeholder="Write your message here" required=""><?php echo !empty($postData['message'])?$postData['message']:''; ?>
-                     </textarea>
+                    
+                      <textarea name="message" class="form-control" rows="4" placeholder="Cover Letter" required=""><?php echo !empty($postData['message'])?$postData['message']:''; ?></textarea>
                 </div>
                 
                 <div class="form-group mb-3">
